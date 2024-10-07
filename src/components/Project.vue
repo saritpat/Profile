@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({
   title: String,
-  image: String,
+  imageName: String,
   data: {
     type: String
   }
@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
   <div class="block">
-    <img src="../assets/images/Blog.png" :alt="title" />
+    <img :src="imageName" :alt="title" />
     <h1>{{ title }}</h1>
     <div>
       {{ data }}

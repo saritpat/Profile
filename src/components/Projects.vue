@@ -1,5 +1,32 @@
 <script setup>
+import { ref } from 'vue'
 import Project from './Project.vue'
+const projects = ref([
+  {
+    id: 1,
+    title: 'Blog Blog',
+    imageName: new URL('@/assets/images/Blog.png', import.meta.url).href, // Use new URL with import.meta.url
+    data: ''
+  },
+  {
+    id: 2,
+    title: 'Dorm management system',
+    imageName: new URL('@/assets/images/Dorm.png', import.meta.url).href,
+    data: ''
+  },
+  {
+    id: 3,
+    title: 'Life@KMITL',
+    imageName: new URL('@/assets/images/Life.png', import.meta.url).href,
+    data: ''
+  },
+  {
+    id: 4,
+    title: 'EZcom',
+    imageName: new URL('@/assets/images/Ezcom.png', import.meta.url).href,
+    data: ''
+  }
+])
 </script>
 
 <template>
@@ -8,10 +35,13 @@ import Project from './Project.vue'
       <h1>PROJECTS</h1>
     </div>
     <div class="content">
-      <Project title="Blog Blog" image="@/assets/images/Blog.png" data="asd" />
-      <Project title="Dorm management system" image="@/assets/images/Dorm.png" data="aaa" />
-      <Project title="Life@KMITL" :image="'@/assets/images/Life.png'" data="bbb" />
-      <Project title="EZcom" :image="'@/assets/images/Ezcom.png'" data="asccd" />
+      <Project
+        v-for="project in projects"
+        :key="project.id"
+        :title="project.title"
+        :imageName="project.imageName"
+        :data="project.data"
+      />
     </div>
   </div>
 </template>
