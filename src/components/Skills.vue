@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script></script>
 
 <template>
@@ -67,7 +68,7 @@
   height: 100vh;
   margin: 20px 0;
   padding: 40px;
-  background-color: rgb(86, 86, 141);
+  background-color: rgba(255, 255, 255, 0.35);
   border-radius: 28px;
 }
 
@@ -104,16 +105,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
 
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.web-icon .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
-    width: 120px;
-    margin: 16px 0px;
-  }
+  width: 120px;
+  margin: 16px 0px;
+}
 </style>

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script></script>
 
 <template>
@@ -40,14 +41,14 @@
 .intro {
   display: flex;
   align-items: center;
+}
 
-  div {
-    text-align: center;
-  }
+.intro div {
+  text-align: center;
+}
 
-  p {
-    margin: 52px 42px 0 52px;
-  }
+.intro p {
+  margin: 52px 42px 0 52px;
 }
 
 .profile_img {

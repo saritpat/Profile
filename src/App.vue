@@ -1,7 +1,7 @@
 <script setup>
 import Intro from './components/Intro.vue'
 import Skills from './components/Skills.vue'
-import Projects from './components/Projects.vue'
+import Projects from './components/Project/Projects.vue'
 import Experience from './components/Experience.vue'
 </script>
 
