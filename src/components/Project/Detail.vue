@@ -22,7 +22,7 @@ const onClick = () => {
 <template>
   <div class="container">
     <h1>{{ props.title }}</h1>
-    <h2>{{ props.subTitle }}</h2>
+    <h3>{{ props.subTitle }}</h3>
     <h3>{{ props.role }}</h3>
     <div class="full">
       <div>
@@ -54,20 +54,26 @@ const onClick = () => {
 .full {
   display: flex;
   gap: 48px;
+  margin-bottom: 12px;
 }
 
 .stack {
   color: black;
+  background-color: lightblue;
   margin: 4px 0px;
   padding: 4px 8px;
-  background-color: lightblue;
   border-radius: 48px;
   text-align: center;
 }
 
 .button {
-  padding: 4px;
-  border-radius: 4px;
   background-color: lightblue;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(80, 177, 209);
 }
 </style>
