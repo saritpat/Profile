@@ -12,7 +12,7 @@ const props = defineProps({
 
 const onClick = () => {
   if (props.link !== '') {
-    window.location.href = props.link
+    window.open(props.link, '_blank');
   } else {
     alert('Link not available')
   }
@@ -74,6 +74,6 @@ const onClick = () => {
 }
 
 button:hover {
-    background-color: rgb(80, 177, 209);
+  background-color: rgb(80, 177, 209);
 }
 </style>

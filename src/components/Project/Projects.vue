@@ -20,7 +20,7 @@ const projects = ref([
     subTitle: 'Blog reading & writing website',
     role: 'Frontend developer, 2021',
     frontend: ['HTML', 'CSS', 'JS'],
-    backend: ['Django', 'Python'],
+    backend: ['JS'],
     link: 'https://github.com/saritpat/dorm_management'
   },
   {
@@ -28,9 +28,9 @@ const projects = ref([
     imageName: new URL('@/assets/images/Life.png', import.meta.url).href,
     title: 'Life@KMITL',
     subTitle: 'Blog reading & writing website',
-    role: 'Backend developer, 2021',
-    frontend: ['HTML', 'CSS', 'JS'],
-    backend: ['Django', 'Python'],
+    role: 'Frontend developer, 2022',
+    frontend: ['HTML', 'CSS', 'ReactTS'],
+    backend: [],
     link: 'https://github.com/LifeAtKMITL/dorm-frontend'
   },
   {
@@ -38,9 +38,9 @@ const projects = ref([
     imageName: new URL('@/assets/images/Ezcom.png', import.meta.url).href,
     title: 'EZcom',
     subTitle: 'Blog reading & writing website',
-    role: 'Backend developer, 2021',
-    frontend: ['HTML', 'CSS', 'JS'],
-    backend: ['Django', 'Python'],
+    role: 'Frontend developer, 2024',
+    frontend: ['HTML', 'Tailwind CSS', 'ReactJS'],
+    backend: [],
     link: 'https://github.com/ezcom-team/ezcom-client'
   }
 ])
